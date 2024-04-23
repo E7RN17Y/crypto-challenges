@@ -2,7 +2,7 @@
 # Crypto Hack  Registration Challenges
 # Make use of roman emperor decipher
 
-cipher = 'LJAKXW EJURM HXDCQ MXEN'
+cipher = 'ZDRXV ARTBVK GRKTY GRTK'
 
 # def roman_emperor_cipher(cipher, shift):
 #     crypted=""
@@ -21,7 +21,11 @@ def roman_emperor_decipher(cipher, shift):
         decrypted+=chr(val)
     return decrypted
 
-for i in cipher.split():
-    for j in range(0,10):   
-        print('cipher={} , shift={}, result='.format(i,j),roman_emperor_decipher(i, j), ' ')
+result=''
+# define the shift range
+for j in range(0,30):
+    for i in cipher.split():
+            result +=roman_emperor_decipher(i, j) + ' '
+    print("shift:%d,result="%(j),result)
+    result=""
 
