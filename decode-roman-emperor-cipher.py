@@ -22,5 +22,6 @@ def roman_emperor_decipher(cipher, shift):
     return decrypted
 
 for i in cipher.split():
-    print(i,roman_emperor_decipher(i, 9), ' ')
+    for j in range(0,10):   
+        print('cipher={} , shift={}, result='.format(i,j),roman_emperor_decipher(i, j), ' ')
 
