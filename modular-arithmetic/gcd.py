@@ -1,9 +1,6 @@
 import sys
 
-def gcd(a, b):
-    if a%b == 0:
-        return b
-    return gcd(b,a%b)
+def gcd(a, b):return b if a%b == 0 else gcd(b,a%b)
 
 if __name__ == '__main__':
     args = sys.argv[1:]
