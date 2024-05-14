@@ -7,7 +7,7 @@ for i in cipher:
     if pow(i,(p-1)//2,p) == 1:
         flag+='1'
     else:
-        flag+='0'
+        flag+='0'   
 
 decoded_flag = [chr(int(flag[i:i+8],2)) for i in range(0,len(flag),8)]
 
