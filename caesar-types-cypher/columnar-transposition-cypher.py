@@ -2,7 +2,7 @@ import pyperclip
 
 # Encryption algorithm!!
 def encrypt(key, message):
-    if key is isinstance(int):
+    if isinstance(key,int):
         pass
     else:
         key = int(key)
@@ -18,4 +18,4 @@ def encrypt(key, message):
 
 
 if __name__ == '__main__':
-    encrypt(8,'Common sense is not so common.')
+    print(encrypt(8,'Common sense is not so common.'))
