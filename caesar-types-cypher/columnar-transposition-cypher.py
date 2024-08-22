@@ -7,10 +7,11 @@ def encrypt(key, message):
     else:
         key = int(key)
 
-    cypherText = [''] * key
+    cipherText = [''] * key
 
     for column in range(key):
         currentIndex = column
         while currentIndex < len(message):
-            cypherText[column] += message[currentIndex]
+            cipherText[column] += message[currentIndex]
             currentIndex+=key
+    return ''.join(cipherText)
