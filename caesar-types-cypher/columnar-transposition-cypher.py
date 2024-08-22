@@ -15,3 +15,7 @@ def encrypt(key, message):
             cipherText[column] += message[currentIndex]
             currentIndex+=key
     return ''.join(cipherText)
+
+
+if __name__ == '__main__':
+    encrypt(8,'Common sense is not so common.')
