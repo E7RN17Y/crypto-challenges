@@ -1,6 +1,6 @@
 import pyperclip
 
-# Encryption algorithm!
+# Encryption algorithm!!
 def encrypt(key, message):
     cypherText = [''] * 8
     for column in range(key):
