@@ -29,7 +29,11 @@ def decryption(key, message):
         result[i]=message[start:start+each_parts]
         start += each_parts
 
-    
+    if pre_last_parts != key:
+        length = round((len(message) - start)/(key - pre_last_parts))
+        for j in range((key - pre_last_parts)):
+            result.append(message[start:start+length])
+            start+=length
 
     plaintext=['']*each_parts
 
