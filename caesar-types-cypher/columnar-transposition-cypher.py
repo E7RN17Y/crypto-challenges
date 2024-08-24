@@ -22,7 +22,7 @@ def decryption(key, message):
     total_length = len(message)
     pre_last_parts = key - (round(len(message) / key) * key - len(message))
     print("pre",pre_last_parts)
-    each_parts = round(len(message) / key)
+    # each_parts = round(len(message) / key)
     result = ['']*pre_last_parts
     start = 0
     for i in range(pre_last_parts):
