@@ -19,7 +19,7 @@ def encrypt(key, message):
     
 
 def decryption(key, message):
-    total_length = len(message)
+    # total_length = len(message)
     pre_last_parts = key - (round(len(message) / key) * key - len(message))
     print("pre",pre_last_parts)
     each_parts = round(len(message) / key)
