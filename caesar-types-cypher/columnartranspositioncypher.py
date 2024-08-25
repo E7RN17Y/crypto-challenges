@@ -49,4 +49,4 @@ def decryption(key, message):
 if __name__ == '__main__':
     print("Encrypted value:",encrypt(8,'Hello world...damn'))
     # print("____decrypt____")
-    print("Decrypted Value:",decryption(8,encrypt(8,'Hello world...damn')))
+    print("Decrypted Value:",decryption(9,'H cb  irhdeuousBdi   prrtyevdgp nir  eerit eatoreechadihf paken ge b te dih aoa.da tts tn'))
