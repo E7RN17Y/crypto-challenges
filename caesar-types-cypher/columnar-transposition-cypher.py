@@ -27,6 +27,7 @@ def decryption(key, message):
     each_parts = ceil(len(message) / key)
     result = ['']*pre_last_parts
     start = 0
+    # re-rarrange messages
     for i in range(pre_last_parts):
         result[i]=message[start:start+each_parts]
         print(result)
@@ -39,7 +40,7 @@ def decryption(key, message):
             start+=length
 
     plaintext=['']*each_parts
-
+    # decrypt
     for o in range(each_parts):
         for j in range(key):
             try:
