@@ -10,7 +10,7 @@ def main():
         print('File doesn\'t exist')
         sys.exit()
 
-    file = open(fileInputName, 'r')
+    file = open(fileInputName, 'r', encoding= 'utf-8' if mode =='encrypt' else 'windows-1252')
     content = file.read()
     file.close()
     if mode ==  'encrypt':
@@ -19,7 +19,7 @@ def main():
         outputFile.write(encrypted)
     else:
         decrypted= decryption(10,content)
-        outputFile = open('decryption-outputfile.txt','w')
+        outputFile = open('decryption-outputfile.txt','w',  encoding='utf-8')
         outputFile.write(decrypted)
 
 
