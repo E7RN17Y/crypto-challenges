@@ -3,7 +3,6 @@ from math import ceil
 
 # Encryption algorithm!!
 def encrypt(key, message):
-    print('message length', len(message))
     if isinstance(key,int):
         pass
     else:
@@ -17,7 +16,6 @@ def encrypt(key, message):
         while currentIndex < len(message):
             cipherText[column] += message[currentIndex]
             currentIndex+=key
-    print(cipherText)
     return ''.join(cipherText)
     
 
